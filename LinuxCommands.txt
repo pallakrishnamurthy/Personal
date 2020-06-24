@@ -7,3 +7,5 @@ awk '{print $(NF-2)}' filename 									 It will print 2nd last element
 [ -d '/var/tmp/' ] && echo "Directory exist"					[To check directory is exist or not]
 [ -f '//var/temp/1.txt' ] && echo "File is exist"				[ To check file is exist or not]
 #?																[To see last command status]
+curl										[To test end point]
+wget										[To download the content from the internet]
