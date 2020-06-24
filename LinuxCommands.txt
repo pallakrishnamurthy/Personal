@@ -4,3 +4,6 @@ find . -type f | xargs grep 'Msg'								[It will look for Msg in all the files]
 find . -type f | xargs sed -e 's/Msg/Krishna/g'					[It will find Msg and will repace to Krishna]
 awk '{print $1}' filename 										 It will print first element
 awk '{print $(NF-2)}' filename 									 It will print 2nd last element
+[ -d '/var/tmp/' ] && echo "Directory exist"					[To check directory is exist or not]
+[ -f '//var/temp/1.txt' ] && echo "File is exist"				[ To check file is exist or not]
+#?																[To see last command status]
