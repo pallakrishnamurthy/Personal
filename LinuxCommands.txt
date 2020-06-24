@@ -1,0 +1,6 @@
+find . -mtime +5 -type fd -delete								[It will delete the files and directories where are not modified more than 5 days]
+find . -type f | xargs -0 sed -i '' -e 's/R5/Krishna/g'
+find . -type f | xargs grep 'Msg'								[It will look for Msg in all the files]
+find . -type f | xargs sed -e 's/Msg/Krishna/g'					[It will find Msg and will repace to Krishna]
+awk '{print $1}' filename 										 It will print first element
+awk '{print $(NF-2)}' filename 									 It will print 2nd last element
