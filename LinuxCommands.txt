@@ -9,3 +9,13 @@ awk '{print $(NF-2)}' filename 									 It will print 2nd last element
 #?																[To see last command status]
 curl										[To test end point]
 wget										[To download the content from the internet]
+cat /etc/os-release								[To see about Linux os]
+uname -a									[To see the Kernal version]
+free -m										[To see the system memory in mega bytes]
+top, mpstat, sysstat								[To see the CPU usage]
+netstat										[To list the running ports]
+ps -ef										[To check running process]
+ps -eo pmem,pcpu,vsize,pid,cmd | sort -k 1 -nr | head -5			[To display top 5 process]
+sed 's/findstring/replacestring/' filename					[To find and replace a string in a file]
+sed '4ikrishnamurthy' filename 							[ it will insert 4th line as krishnamurthy]
+sudo find . -type f -size +1M
