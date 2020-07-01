@@ -9,3 +9,5 @@ awk '{print $(NF-2)}' filename 									 It will print 2nd last element
 #?																[To see last command status]
 curl										[To test end point]
 wget										[To download the content from the internet]
+ls -lAh | grep -v '^d'								[To display files only]
+ls -lAh | grep -v '^-'								[To display directories only]
