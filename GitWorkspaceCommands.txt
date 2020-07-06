@@ -1,0 +1,4 @@
+git clone <URL>  							--- To clone
+git add <.>,<filename1,filename2>			--- To add into stage Area.
+git commit -m"Message"						--- To record the change.
+git push									--- Moving changes from local master branch to Git hub.

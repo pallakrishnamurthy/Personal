@@ -9,6 +9,7 @@ awk '{print $(NF-2)}' filename 									 It will print 2nd last element
 #?																[To see last command status]
 curl										[To test end point]
 wget										[To download the content from the internet]
+<<<<<<< HEAD
 cat /etc/os-release								[To see about Linux os]
 uname -a									[To see the Kernal version]
 free -m										[To see the system memory in mega bytes]
@@ -19,3 +20,7 @@ ps -eo pmem,pcpu,vsize,pid,cmd | sort -k 1 -nr | head -5			[To display top 5 pro
 sed 's/findstring/replacestring/' filename					[To find and replace a string in a file]
 sed '4ikrishnamurthy' filename 							[ it will insert 4th line as krishnamurthy]
 sudo find . -type f -size +1M
+=======
+ls -lAh | grep -v '^d'								[To display files only]
+ls -lAh | grep -v '^-'								[To display directories only]
+>>>>>>> eefcfa5c624c9a7d0f7b16196a8f7391390f4cfe
