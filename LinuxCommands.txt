@@ -22,3 +22,4 @@ sudo find . -type f -size +1M
 ls -lAh | grep -v '^d'								[To display files only]
 ls -lAh | grep -v '^-'								[To display directories only]
 mount -t cifs -o domain=infor,user=ewsuser1,uid=503,gid=503 //usgvwngpmsvm16.infor.com/HMSimages /home/ngpms/ngpms_1.0		[To mount the windows dir]
+umount												[ To remove the existing mount point]
