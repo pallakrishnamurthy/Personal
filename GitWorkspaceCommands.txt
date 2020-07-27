@@ -1,4 +1,17 @@
+URL: https://www.toolsqa.com/category/git/
 git clone <URL>  							--- To clone
 git add <.>,<filename1,filename2>			--- To add into stage Area.
 git commit -m"Message"						--- To record the change.
 git push									--- Moving changes from local master branch to Git hub.
+git checkout -b <name_of_branch>			--- It will create a new branch and move to new branch in a single command.
+
+SSH Key gen for Git:
+============================
+ssh-keygen -t rsa -b 4096 -C "krishnamurthy.palla@infor.com"
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/id_rsa
+clip < ~/.ssh/id_rsa.pub
+copy above public key into Git ssh  keys.
+ssh -vT git@oxfordssh.awsdev.infor.com
+
+access token								--- 1fV1TRgeys1zah_n3hSY
