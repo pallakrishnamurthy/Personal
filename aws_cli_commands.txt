@@ -1,5 +1,13 @@
 Command												Purpose
-aws sts get-caller-identity									To see the Account ID, User ID and Access roles information
+S3 Commands:
+===============================
+aws sts get-caller-identity												To see the Account ID, User ID and Access roles information
 aws s3 cp <SourceFilePath> <DestinationFilePath>						To copy a file from S3 to local or voice versa.
-aws s3 --recursive cp <SourceDirectory> <DestinationDirectory>					To copy a directoy from S3 to local or voice versa.
+aws s3 --recursive cp <SourceDirectory> <DestinationDirectory>			To copy a directoy from S3 to local or voice versa.
+aws s3 rm <SourceFilePath> <DestinationFilePath>						To delete a file from S3 to local or voice versa.
+aws s3 --recursive rm <SourceDirectory> <DestinationDirectory>			To delete a directoy from S3 to local or voice versa.
 
+EC2 Commands:
+===============================
+aws ec2 start-instances <instanceID>									To start the instance.
+aws ec2 stop-instances <instanceID>										To stop the instance.
